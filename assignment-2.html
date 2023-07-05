@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-title {
+      background-color: #f8f8f8;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .card-image {
+      flex-grow: 1;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #card-image-1{
+      background-image: url('https://img.freepik.com/free-vector/code-testing-cartoon-banner-functional-test-methodology-programming-search-errors-bugs-website-platform-development-dashboard-usability-optimization-computer-pc-vector-illustration_107791-3766.jpg?w=1060&t=st=1688563032~exp=1688563632~hmac=e0454f9aa29749a021f8f6ac2be8600869ffad82777fa84694eac0aa6881d51f');
+    }
+    
+    #card-image-2{
+      background-image: url('https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=740&t=st=1688563106~exp=1688563706~hmac=a2ce7dd7b2858c1267a15755261122da3243d360f7cced8513fcf25d6ae1756e');
+    }
+
+    #card-image-3{
+      background-image: url('https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?w=740&t=st=1688563126~exp=1688563726~hmac=6ef95a86a690d902893935d91d31b8d065731af5eec1e790646f58f9306b334f');
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="card">
+      <div class="card-title">Card 1</div>
+      <div class="card-image" id="card-image-1" ></div>
+      <div class="card-content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quas id obcaecati in quibusdam. Eveniet.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Card 2</div>
+      <div class="card-image" id="card-image-2" ></div>
+      <div class="card-content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem doloribus dicta architecto asperiores quos animi.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Card 3</div>
+      <div class="card-image" id="card-image-3" ></div>
+      <div class="card-content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore nisi cum necessitatibus sint modi. Fugit.
+      </div>
+    </div>
+  
+  </div>
+</body>
+</html>
